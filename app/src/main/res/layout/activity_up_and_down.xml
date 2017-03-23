@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_up_and_down"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aberamax.android.xapomateriallab.UpAndDownActivity">
+
+
+    <!--
+    Once you define the custom attributes, you can use them in layout XML files just like
+    built-in attributes. The only difference is that your custom attributes belong to
+    a different namespace. Instead of belonging to the
+    http://schemas.android.com/apk/res/android namespace,
+    they belong to http://schemas.android.com/apk/res/[your package name].
+    -->
+
+
+    <com.aberamax.android.ui.CircleView
+        xmlns:bangolero="http://schemas.android.com/apk/res/com.aberamax.android.xapomateriallab"
+        android:id="@+id/circle_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        bangolero:circleRadius="@dimen/circle_view_radius"
+        bangolero:strokeWidth="@dimen/circle_view_stroke"
+        bangolero:circleGap="@dimen/circle_view_gap"
+        bangolero:fillColor="@android:color/holo_orange_light"
+        bangolero:strokeColor="@android:color/holo_purple">
+    </com.aberamax.android.ui.CircleView>
+
+
+</RelativeLayout>

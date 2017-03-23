@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aberamax.android.xapomateriallab.ShadowActivity">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="180dp"
+        android:layout_width="180dp"
+        android:background="@color/md_white_1000"
+
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtElevation1"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@color/md_amber_300"
+            android:elevation="30dp"
+            android:outlineProvider="bounds"
+            android:id="@+id/yellowSquare">
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/txtElevation1"
+        android:layout_below="@+id/seekBarElevation1"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarElevation1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:background="@color/md_blue_100"
+        android:elevation="30dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/blueSquare">
+
+    </RelativeLayout>
+
+</RelativeLayout>
